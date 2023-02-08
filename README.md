@@ -2,9 +2,11 @@
 JBlas fails on RHEL7/Centos7
 
 cd /root
+
 unzip /jblas-1.2.5.jar
 
 mv /root/lib/static/Linux/amd64/sse3/libjblas.so /root/lib
+
 chmod +x /root/lib/libjblas.so
 
 export LD_LIBRARY_PATH=/root/lib
