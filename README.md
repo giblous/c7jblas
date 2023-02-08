@@ -11,6 +11,24 @@ export LD_LIBRARY_PATH=/root/lib
 
 java -jar /jblas-1.2.5.jar
 
+jshell
+```
+|  Welcome to JShell -- Version 11.0.18
+|  For an introduction type: /help intro
+
+jshell> System.loadLibrary("jblas");
+|  Exception java.lang.UnsatisfiedLinkError: /root/lib/libjblas.so: /lib64/libm.so.6: version `GLIBC_2.23' not found (required by /root/lib/libquadmath.so.0)
+|        at ClassLoader$NativeLibrary.load0 (Native Method)
+|        at ClassLoader$NativeLibrary.load (ClassLoader.java:2445)
+|        at ClassLoader$NativeLibrary.loadLibrary (ClassLoader.java:2501)
+|        at ClassLoader.loadLibrary0 (ClassLoader.java:2700)
+|        at ClassLoader.loadLibrary (ClassLoader.java:2662)
+|        at Runtime.loadLibrary0 (Runtime.java:830)
+|        at System.loadLibrary (System.java:1873)
+|        at (#1:1)
+```
+
+
 yum search libgfortran
 
 ```
