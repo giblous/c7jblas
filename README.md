@@ -72,3 +72,18 @@ checking vector addition... ok
 checking matrix multiplication... ok
 checking existence of dsyev...... ok
 ```
+
+
+# jblas 1.2.4
+
+```
+========================================================================================================================
+ Package                        Arch                      Version                         Repository               Size
+========================================================================================================================
+Installing:
+ lapack                         x86_64                    3.4.2-8.el7                     base                    5.4 M
+Installing for dependencies:
+ blas                           x86_64                    3.4.2-8.el7                     base                    399 k
+ libgfortran                    x86_64                    4.8.5-44.el7                    base                    301 k
+ libquadmath                    x86_64                    4.8.5-44.el7                    base                    190 k
+```
